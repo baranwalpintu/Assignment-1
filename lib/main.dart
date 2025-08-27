@@ -1,5 +1,6 @@
 import 'package:assignment/providers/auth_provider.dart';
 import 'package:assignment/providers/products_provider.dart';
+import 'package:assignment/screens/home_screen.dart';
 import 'package:assignment/services/api_client.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.indigo,
           ),
-          home: const LoginScreen(), // Start with Login Screen
+          home: const LoginScreen(),
+         
         ));
   }
 }

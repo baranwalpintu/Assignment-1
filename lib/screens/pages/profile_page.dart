@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../login_screen.dart'; // Adjust path if needed
+import '../login_screen.dart'; 
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class ProfilePage extends StatelessWidget {
               const Text(
                 'John Doe',
                 style: TextStyle(
-                  color: Color(0xFFFFD700), // gold/yellow like screenshot
+                  color: Color(0xFFFFD700), 
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
@@ -75,7 +75,8 @@ class ProfilePage extends StatelessWidget {
                     Navigator.pushAndRemoveUntil(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const LoginScreen()),
+                        builder: (context) => const LoginScreen(),
+                      ),
                       (route) => false,
                     );
                   },

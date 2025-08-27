@@ -1,3 +1,4 @@
+import 'package:assignment/screens/pages/home_page.dart';
 import 'package:assignment/screens/pages/product_page.dart';
 import 'package:assignment/screens/pages/profile_page.dart';
 import 'package:flutter/material.dart';
@@ -47,12 +48,7 @@ class HomeScreen extends StatelessWidget {
                 child: const TabBarView(
                   children: [
                     // Home Tab
-                    Center(
-                      child: Text(
-                        "🏠 Welcome to Home!",
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
-                      ),
-                    ),
+                    HomePage(),
 
                     // Products Tab
                     ProductPage(),
